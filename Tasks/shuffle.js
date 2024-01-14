@@ -1,3 +1,5 @@
+'use strict';
+
 // Shuffle an array
 
 let Shuffle = (...List) => {
