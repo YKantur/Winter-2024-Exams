@@ -1,16 +1,19 @@
+'use strict';
+
 // Sum all number values in dict
 
-// Step 2
-// Remove unnecessary variable assignment and curly braces
+// Step 2 (modified)
+// Replace forEach with a regular loop for simplicity
 
 const count = (obj) => {
   let sum = 0;
 
-  // Iterate over the keys and sum up the number values
-  Object.keys(obj).forEach((key) => {
-    const value = obj[key];
+  // Iterate over the values and sum up the number values
+  const values = Object.values(obj);
+  for (let i = 0; i < values.length; i++) {
+    const value = values[i];
     if (typeof value === 'number') sum += value;
-  });
+  }
 
   return sum;
 };
