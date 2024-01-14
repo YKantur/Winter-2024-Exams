@@ -1,11 +1,13 @@
-// Filter dictionary keys, retaining only the specified ones
+'use strict';
+
+// Retain only specified keys in the dictionary
+
 const take = (dx, ...xor) => {
-  // Iterate through the keys and remove those not in the specified list
-  Object.keys(dx).forEach((key) => {
+  for (const key in dx) {
     if (!xor.includes(key)) {
       delete dx[key];
     }
-  });
+  }
   return dx;
 };
 
