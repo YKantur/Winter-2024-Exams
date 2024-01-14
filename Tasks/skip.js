@@ -1,3 +1,5 @@
+'use strict';
+
 // Return an array without listed values
 
 const skip = (inputArray, ...valuesToRemove) => {
