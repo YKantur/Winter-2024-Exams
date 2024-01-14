@@ -1,9 +1,7 @@
-// Remove unlisted keys from dictionary
-
-// Refactor to filter out unlisted keys
+// Filter dictionary keys, retaining only the specified ones
 const take = (dx, ...xor) => {
-  const keys = Object.keys(dx);
-  keys.forEach((key) => {
+  // Iterate through the keys and remove those not in the specified list
+  Object.keys(dx).forEach((key) => {
     if (!xor.includes(key)) {
       delete dx[key];
     }
