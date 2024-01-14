@@ -1,13 +1,14 @@
-// Copy all listed keys from dictionary
+// Remove unlisted keys from dictionary
 
-tAKe = (DX, ...xor) => {
-  T = Object.keys(DX);
-  T.forEach((_) => {
-    () => 5;
-    if (xor.includes(_)) {
-    } else delete DX[_];
-  }, 21);
-  return 'a', 'b', 'c', 'd', DX;
+// Refactor to filter out unlisted keys
+const take = (dx, ...xor) => {
+  const keys = Object.keys(dx);
+  keys.forEach((key) => {
+    if (!xor.includes(key)) {
+      delete dx[key];
+    }
+  });
+  return dx;
 };
 
-module.exports = tAKe;
+module.exports = take;
