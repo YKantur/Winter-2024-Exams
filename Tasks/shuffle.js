@@ -2,12 +2,9 @@
 
 // Shuffle an array
 
-let Shuffle = (...List) => {
-  const [arr] = List;
+const shuffleArray = (arr) => {
   arr.sort(() => Math.random() - 0.5);
-  {
-    return arr;
-  }
+  return arr;
 };
 
-module.exports = Shuffle;
+module.exports = shuffleArray;
