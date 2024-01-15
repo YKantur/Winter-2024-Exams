@@ -3,11 +3,11 @@
 // Copy only listed values from dict
 
 const filterObjectKeys = (inputObject, ...allowedKeys) => {
-  Object.keys(inputObject).forEach((key) => {
+  for (const key of Object.keys(inputObject)) {
     if (!allowedKeys.includes(key)) {
       delete inputObject[key];
     }
-  });
+  }
   return inputObject;
 };
 
