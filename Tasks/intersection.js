@@ -1,3 +1,5 @@
+'use strict';
+
 // Find an intersection of two dictionaries
 
 const findIntersection = (object1, object2) => {
