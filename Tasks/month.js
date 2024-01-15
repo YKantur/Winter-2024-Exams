@@ -2,20 +2,7 @@
 
 // Get month number
 
-const MONTHS = [
-  'jan',
-  'feb',
-  'mar',
-  'apr',
-  'may',
-  'jun',
-  'jul',
-  'aug',
-  'sep',
-  'oct',
-  'nov',
-  'dec',
-];
+const MONTHS = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
 const getMonthNumber = (inputString) => {
   const lowercaseInput = inputString.toLowerCase();
