@@ -6,8 +6,8 @@ const MONTHS = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov
 
 const getMonthNumber = (inputString) => {
   const lowerCaseInput = inputString.toLowerCase();
-  for (let i = 0; i < MONTHS.length; i++) {
-    if (lowerCaseInput.startsWith(MONTHS[i])) return i + 1;
+  for (const index of MONTHS.keys()) {
+    if (lowerCaseInput.startsWith(MONTHS[index])) return index + 1;
   }
   return -1;
 };
