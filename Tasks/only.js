@@ -3,12 +3,13 @@
 // Copy only listed values from dict
 
 const filterObjectKeys = (inputObject, ...allowedKeys) => {
-  for (const key of Object.keys(inputObject)) {
+  let outputObject = inputObject;
+  for (const key of Object.keys(outputObject)) {
     if (!allowedKeys.includes(key)) {
-      delete inputObject[key];
+      delete outputObject[key];
     }
   }
-  return inputObject;
+  return outputObject;
 };
 
 module.exports = filterObjectKeys;
