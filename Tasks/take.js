@@ -2,13 +2,13 @@
 
 // Retain only specified keys in the dictionary
 
-const take = (dx, ...xor) => {
-  for (const key in dx) {
-    if (!xor.includes(key)) {
-      delete dx[key];
+const take = (sourceObject, ...keysToTake) => {
+  for (const key in sourceObject) {
+    if (!keysToTake.includes(key)) {
+      delete sourceObject[key];
     }
   }
-  return dx;
+  return sourceObject;
 };
 
 module.exports = take;
