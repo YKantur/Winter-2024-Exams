@@ -3,7 +3,7 @@
 // Shuffle an array
 
 const shuffleArray = (arr) => {
-  return arr.sort(() => Math.random() - 0.5);
+  return arr.sort(() => Math.random());
 };
 
 module.exports = shuffleArray;
